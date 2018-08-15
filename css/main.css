@@ -52,8 +52,8 @@ html {
 
 #c1 {
     background-image: url('../img/ges3.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .nav-wrap {
@@ -141,7 +141,7 @@ html {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        background-color: #f5f5f5;
+        background-color: rgba(255, 255, 255);
         /* display: none; */
         visibility: hidden;
     }
@@ -167,6 +167,59 @@ html {
     #links a {
         padding: 0;
     }
+    
+#nav-icon {
+    width: 30px;
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 25px;
+    position: relative;
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+#nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #263238;
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+    top: 16px;
+}
+
+/* #nav-icon span:nth-child(2) {
+    top: 34px;
+  }
+   */
+
+#nav-icon span:nth-child(2) {
+    top: 32px;
+}
+
+#nav-icon.open span:nth-child(1) {
+    top: 24px;
+    transform: rotate(135deg);
+}
+
+/* #nav-icon.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+   */
+
+#nav-icon.open span:nth-child(2) {
+    top: 24px;
+    transform: rotate(-135deg);
+}
+
 }
 
 /* Homepage */
@@ -183,7 +236,6 @@ html {
 }
 
 .flickity-slider {
-   
     /* font-family: 'Cooming Soon', cursive; */
     height: 100%;
     width: 100%;
@@ -387,24 +439,150 @@ html {
     color: #263238;
 }
 
-@media only screen and (max-width:45em) {}
+@media only screen and (max-width:45em) {
+    .home2 {
+        flex-direction: column;
+    }
+    .note1,
+    .note2 {
+        width: 90%;
+        text-align: left;
+        margin: 0;
+        padding-left: 10%;
+        align-self: unset;
+        color: #455a64;
+        font-size: 1em;
+    }
+    .tagline {
+        margin: 0;
+        padding: 1%;
+        padding-left: 10%;
+        font-size: 1.4em;
+        text-align: left;
+    }
+    .who {
+        font-size: 1.5em;
+    }
+    .scr2 {
+        flex-direction: column;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    .wedo {
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        padding-left: 10%;
+        font-size: 1.8em;
+    }
+    .wedo h1 {
+        margin: 0;
+    }
+    .list {
+        width: unset;
+        padding: 0;
+        margin: 0;
+        padding-top: 4%;
+    }
+    .li {
+        line-height: 12vw;
+        font-size: 6vw;
+    }
+    .circle {
+        height: 6vw;
+        width: 6vw;
+    }
+    .knowus {
+        font-size: 2em;
+    }
+    .rev {
+        flex-direction: row;
+    }
+    .alt4 {
+        width: unset;
+    }
+    .alt6 {
+        width: 94%;
+        font-size: 2em;
+        text-align: center;
+    }
+    .alt6 p {
+        margin-bottom: 0;
+    }
+    .count-scr {
+        font-size: 1.4em;
+    }
+    .numbers {
+        font-size: inherit;
+    }
+    .final {
+        font-size: 1.4em;
+    }
+    .f-step {
+        justify-content: space-evenly;
+    }
+    .f-links {
+        width: unset;
+    }
+    #footer {
+        flex-direction: column;
+    }
+    #footer h3 {
+        width: 60%;
+    }
+    footer {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+    #copy {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
 
 /* Footer */
 
-footer {
+/* footer {
     padding: 5vh;
     padding-bottom: 1vh;
     background-color: #263238;
     color: #bdbdbd;
-    /* font-size: 24px; */
+    font-size: 24px;
     text-align: center;
+} */
+
+footer {
+    background-color: #263238;
+    color: #cfd8dc;
+    padding: 3%;
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 1%;
 }
 
-.footer {
+#footer {
+    /* height: 100vh; */
     display: flex;
     justify-content: space-evenly;
 }
 
-.foot {
-    width: 24px;
+#footer h3 {
+    border-bottom: 1px solid #cfd8dc;
+}
+
+#footer a {
+    color: #cfd8dc;
+    text-decoration: none;
+    line-height: 1.4em;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0%;
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
 }

@@ -14,10 +14,9 @@
         <div class="nav">
             <div id="menu-link">
                 <div id="brand">KGEC E-CELL</div>
-                <div id="menu">
-                    <a href="#" onclick="toggle()">
-                        <img src="img/icons/baseline_menu_black_48dp.png" width="100%" alt="">
-                    </a>
+                <div id="nav-icon" onclick="toggle()">
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
 
@@ -219,48 +218,78 @@
 
     </section>
     <footer>
-        <section class="footer">
-            <div class="foot">
+        <div id="footer">
+            <div id="quicklinks">
+                <h3>Quicklinks</h3>
+                <a href=""> Alumni</a>
+                <br>
+                <a href=""> MAKAUT</a>
+                <br>
+                <a href=""> AICTE</a>
+                <br>
+                <a href=""> NIRF 2017</a>
+                <br>
+                <a href=""> CICBA 2018</a>
+                <br>
+                <a href=""> IQAC </a>
+                <br>
+            </div>
+            <div id="explore">
+                <h3>Explore</h3>
                 <a href="">
-                    <img src="img/icons/facebook-official.svg" width="100%" alt="">
-                </a>
+                    Student's Activity</a>
+                <br>
+                <a href="">Espektro </a>
+                <br>
+                <a href="">E-Cell</a>
+                <br>
+                <a href="">Gallery</a>
+                <br>
             </div>
-            <div class="foot">
+            <div id="acamedics">
+                <h3>Acamedics</h3>
                 <a href="">
-                    <img src="img/icons/instagram.svg" width="100%" alt="">
-                </a>
+                    Calender</a>
+                <br>
+                <a href="">Syllabus </a>
+                <br>
+                <a href="">KGEC-ITRA R&D</a>
+                <br>
+                <a href="">IEEE-EDS STUDENT BRANCH CHAPTER</a>
+                <br>
             </div>
-            <div class="foot">
-                <a href="">
-                    <img src="img/icons/youtube-play.svg" width="100%" alt="">
-                </a>
+            <div id="address">
+                <h3>Contacts</h3>
+                <p>
+                    Kalyani Government Engineering College
+                    <br> Kalyani, Nadia, West Bengal, India 741235
+                    <br> Phone : +91 3325821309
+                    <br> Email : contact@kgec.edu.in
+                    <br>
+                </p>
+
             </div>
-            <div class="foot">
-                <a href="mailto:ecell@kgec.edu.in">
-                    <img src="img/icons/baseline_mail_white_24dp.png" alt="">
-                </a>
-            </div>
-            <div class="foot">
-                <a href="tel:+918116811228">
-                    <img src="img/icons/baseline_call_white_24dp.png" alt="">
-                </a>
-            </div>
-        </section>
-        <p style="padding-top: 1vh;">
-            <img src="img/icons/baseline_copyright_white_24dp.png" width="12px" alt=""> Copyright reserved by Kalyani Government Enginnering College Entepreneurship-Cell</p>
+        </div>
+        <p id="copy">
+                <img src="img/icons/baseline_copyright_white_24dp.png" width="12px" alt=""> Copyright reserved by Kalyani Government Enginnering College</p>
     </footer>
     <script src="js/flickity.pkgd.min.js"></script>
     <script>
         let menu = document.getElementById("links");
         let b = 1;
-
+        let ele = document.getElementById("nav-icon");
+        let nav = document.getElementsByClassName("nav-wrap");
         function toggle() {
             if (b) {
                 menu.classList.add = "menu-open";
                 menu.style.visibility = "visible";
+                ele.classList.add("open");
+                nav[0].style.backgroundColor = "rgb(255, 255, 255)";
                 b = 0;
             } else {
                 menu.style.visibility = "hidden";
+                ele.classList.remove("open");
+                nav[0].style.backgroundColor = "rgba(255, 255, 255, 0.5)";
                 b = 1;
             }
 
