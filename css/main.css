@@ -51,7 +51,7 @@ html {
 }
 
 #c1 {
-    background-image: url('../img/ges3.jpg');
+    /* background-image: url('../img/ges3.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -99,6 +99,9 @@ html {
     justify-content: flex-end;
     font-size: 25px;
     padding-right: 3vw;
+    position: fixed;
+    top: 50px;
+    width: 100%;
 }
 
 #links a {
@@ -167,59 +170,50 @@ html {
     #links a {
         padding: 0;
     }
-    
-#nav-icon {
-    width: 30px;
-    height: 50px;
-    margin-left: 15px;
-    margin-right: 25px;
-    position: relative;
-    transform: rotate(0deg);
-    cursor: pointer;
-}
-
-#nav-icon span {
-    display: block;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background: #263238;
-    border-radius: 2px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-}
-
-#nav-icon span:nth-child(1) {
-    top: 16px;
-}
-
-/* #nav-icon span:nth-child(2) {
+    #nav-icon {
+        width: 30px;
+        height: 50px;
+        margin-left: 15px;
+        margin-right: 25px;
+        position: relative;
+        transform: rotate(0deg);
+        cursor: pointer;
+    }
+    #nav-icon span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: #263238;
+        border-radius: 2px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+    #nav-icon span:nth-child(1) {
+        top: 16px;
+    }
+    /* #nav-icon span:nth-child(2) {
     top: 34px;
   }
    */
-
-#nav-icon span:nth-child(2) {
-    top: 32px;
-}
-
-#nav-icon.open span:nth-child(1) {
-    top: 24px;
-    transform: rotate(135deg);
-}
-
-/* #nav-icon.open span:nth-child(2) {
+    #nav-icon span:nth-child(2) {
+        top: 32px;
+    }
+    #nav-icon.open span:nth-child(1) {
+        top: 24px;
+        transform: rotate(135deg);
+    }
+    /* #nav-icon.open span:nth-child(2) {
     opacity: 0;
     left: -60px;
   }
    */
-
-#nav-icon.open span:nth-child(2) {
-    top: 24px;
-    transform: rotate(-135deg);
-}
-
+    #nav-icon.open span:nth-child(2) {
+        top: 24px;
+        transform: rotate(-135deg);
+    }
 }
 
 /* Homepage */
