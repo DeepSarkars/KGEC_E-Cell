@@ -49,6 +49,11 @@ html {
     color: #37474f;
 }
 
+#brand a {
+    color: #37474f;
+    text-decoration: none;
+}
+
 #menu-link {
     display: flex;
     align-content: center;
@@ -167,9 +172,6 @@ html {
     }
 }
 
-
-
-
 footer {
     background-color: #263238;
     color: #cfd8dc;
@@ -206,10 +208,7 @@ footer p {
     padding-top: 2%;
 }
 
-
 @media only screen and (max-width:45em) {
-
-    
     #footer {
         flex-direction: column;
     }
@@ -224,5 +223,4 @@ footer p {
         margin-top: 10px;
         font-size: 12px;
     }
-
 }

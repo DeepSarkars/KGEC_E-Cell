@@ -229,7 +229,7 @@ span{
 /*=============================DESIGNING WIDTH FOR DIFFERENT SCREEN SIZES============================*/
 
 
-*@media screen and (max-width:1260px){
+@media screen and (max-width:1260px){
 	#navbar {width:90%;}
 	#navbar>li{width:25%;}
 	
