@@ -1,320 +1,195 @@
 <!DOCTYPE html>
-<!-- saved from url=(0041)https://www.ecell.in/2018/pages/about.php -->
-<html lang="en" class="csstransforms csstransforms3d csstransitions" style="height: auto;">
+<html>
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-
-	<title>About | E-Cell KGEC</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<!--Favicon -->
-
-	<!-- CSS Files -->
-
-	<link rel="stylesheet" href="css/about/bootstrap.min.css">
+    <meta charset="utf-8" />
+    <title> KGEC E-CELL </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
+    <link rel="stylesheet" href="css/about/bootstrap.min.css">
 	<link rel="stylesheet" href="css/about/style.css">
 	<link rel="stylesheet" href="css/about/font-awesome.css">
-	<link rel="stylesheet" href="css/about/responsive.css">
-	<!-- Theme Panel -->
-	<!-- Skin Colors -->
-	<link rel="stylesheet" href="css/about/main.css">
+    <link rel="stylesheet" href="css/about/responsive.css">
+    <link rel="stylesheet" href="css/about/main.css">
 	<link rel="stylesheet" href="css/about/baguetteBox.min.css">
-	<link rel="stylesheet" href="css/about/thumbnail-gallery.css">
-
-
-
-	<div class="fit-vids-style" id="fit-vids-style" style="display: none;">­
-		<style>
-			.fluid-width-video-wrapper {
-				width: 100%;
-				position: relative;
-				padding: 0;
-			}
-
-			.fluid-width-video-wrapper iframe,
-			.fluid-width-video-wrapper object,
-			.fluid-width-video-wrapper embed {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-			}
-		</style>
-	</div>
+    <link rel="stylesheet" href="css/about/thumbnail-gallery.css">
+    
 	<script src="js/about/jquery.min.js.download"></script>
+
 </head>
 
-<body class="slabtexted">
+<body>
+    <nav class="nav-wrap">
+        <div class="navi">
+            <div id="menu-link">
+                <div id="brand">KGEC E-CELL</div>
+                <div id="nav-icon" onclick="toggle()">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div id="links">
+                <div>
+                    <a href="#">About</a>
+                </div>
+                <div>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                    <a href="#">Gallery</a>
+                </div>
+                <div id="lastnav">
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+            <section id="blog" class="container">
+                    <!-- Blog Inner -->
+                    <div class="inner blog">
+                        <!-- Posts -->
+                        <div class="posts">
+                            <!-- Vision -->
+                            <!-- Post -->
+                            <div id="vision" class="post wow zoomIn">
+                                <div class="wrapper">
+                                    <h1 class="normal post-header">
+                                        Our Vision
+                                    </h1>
+            
+                                    <img class="imageAbout" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSmhcTQ3eip7hsAxxO9SRF5zoMGODdYtN7_4KCWi-ReopkQvyolg"
+                                        alt="">
+                                    <p>We, at The Entrepreneurship Cell, share the common belief that for India to emerge as a world power, the youth has
+                                        to break the shackles of prejudices and inertia that has kept them from starting up. Creating an entrepreneurial ecosystem
+                                        to provide the platform for individuals with creative minds and ideas with potential for substantial business opportunities,
+                                        is what we strive towards continually. We enable smooth and efficient interaction between its principal components
+                                        spanning students, faculty, working professionals, aspiring and existing entrepreneurs, mentors, angel investors and
+                                        venture capitalists.</p>
+            
+                                </div>
+                            </div>
+                            <div id="achievements" class="post wow zoomIn" data-animation="fadeIn" data-animation-delay="100">
+                                <div class="wrapper">
+                                    <h1 class="normal post-header">
+                                        Achievements
+                                    </h1>
+            
+                                    <img class="imageAbout" src="data:image/jpeg;base64,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"
+                                        alt="">
+                                    <p>Success has always had myriad connotations for every individual. For some it is recognition in society, and for some,
+                                        success is about evolution. E - Cell, through its activities and competitions, has achieved both. 16 years of unprecedented
+                                        work and planning has led to E-Cell being recognized as the Leading Entrepreneurship Promoting Student Organization
+                                        in the country by the ‘NEN Achievement Awards’ instituted by the Wadhwani Foundation and felicitated at TiECon 2005.</p>
+                                    <p>One among the various milestones achieved in its quest for perfection was the success in making ‘Eureka!', E-cell's
+                                        B-Plan competition, Asia's largest in 2001. CNN as well as Thomson Reuters have now recognized ‘Eureka!’ as Asia's
+                                        largest Business Model competition.</p>
+                                    <p>Success, for us, is not only about the milestones we reach but is also about the number of lives we affect during our
+                                        journey. With this in mind, we helped in the establishment of 150+ E-Cells in about 80 cities across the nation, through
+                                        our initiative, National Entrepreneurship Challenge. The Entrepreneurship Summit is our annual flagship event, which
+                                        has received patronage from UNESCO, Make in india, Digital India and Startup India. It brings together the leading
+                                        entrepreneurs of the world and caters to all those crazy rebels who wish to change the world, start their own business
+                                        or fund a business and become a trend-setter. Eminent personalities like Mr. Travis Kalanick (Founder &amp; CEO, Uber),
+                                        Sachin Bansal( Co-founder &amp; Executive chairman, Flipkart) Mr. Nandan Nilekani (Co-founder, Infosys), Dr. Werner
+                                        Vogels, (CTO, Amazon.com) have been a part of the Summit. </p>
+            
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <!-- End Blog Inner -->
+                </section>
+                <!-- End Blog Section -->
+            
+            
+            
+               
+                
 
 
-	<!-- Page Loader -->
-	<section id="pageloader" style="display: none;">
-		<div class="loader-item fa fa-spin colored-border" style="display: none;"></div>
-	</section>
-
-	<!-- Navigation -->
-	<section id="navigation" class="visible-nav white-nav">
-		<!-- Navigation Inner -->
-
-		<div class="nav-inner">
-			<!-- Site Logo -->
-			<div class="site-logo">
-				<a href="https://kgececell.com/" class="scroll logo">
-					<!-- Your Logo -->
-					<img src="https://kgececell.com/dependencies/img/Ecelllogohigh.png" alt="logo">
-				</a>
-			</div>
-			<!-- End Site Logo -->
-			<a class="mini-nav-button dark">
-				<i class="fa fa-bars"></i>
-			</a>
-			<!-- Navigation Menu -->
-			<div class="nav-menu">
-				<ul class="nav uppercase condensed bold">
-					<li>
-						<a href="#">home</a>
-					</li>
-					<!-- DropDown Menu -->
-					<!-- <ul class="dropdown-menu uppercase gray-border">
-							<li><a href="about.php#vision">Vision</a></li>
-							<li><a href="about.php#achievements">Achievements</a></li>
-							<li><a href="about.php#successstories">Success Stories</a></li>
-						</ul> -->
-					<!-- End DropDown Menu -->
-					</li>
-					<li class="dropdown-toggle nav-toggle">
-						<a>About
-							<b data-toggle="dropdown" class="caret"></b>
-						</a>
-						<!-- DropDown Menu -->
-						<ul class="dropdown-menu uppercase gray-border" style="display: none;">
-							<li>
-								<a href="#" target="_blank">About US</a>
-							</li>
-							<li>
-								<a href="#" target="_blank">Initiatives</a>
-							</li>
-							<li>
-								<a href="#" target="_blank">Achievements</a>
-							</li>
-							<li>
-								<a href="#" target="_blank">Fort-Folio</a>
-							</li>
-							<li>
-								<a href="#" target="_blank">Alumni</a>
-							</li>
-						</ul>
-						<!-- End DropDown Menu -->
-					</li>
-					<li class="dropdown-toggle nav-toggle">
-						<a href="#">Events
-							<b data-toggle="dropdown" class="caret"></b>
-						</a>
-						<!-- DropDown Menu -->
-						<ul class="dropdown-menu uppercase gray-border" style="display: none;">
-							<li>
-								<a href="#">E-Summit</a>
-							</li>
-						</ul>
-						<!-- End DropDown Menu -->
-					</li>
-					<li class="dropdown-toggle nav-toggle">
-						<a href="#">What We Provide
-							<b data-toggle="dropdown" class="caret"></b>
-						</a>
-						<!-- DropDown Menu -->
-						<ul class="dropdown-menu uppercase gray-border">
-							<li>
-								<a href="#">Training</a>
-							</li>
-							<li>
-								<a href="#">Internship</a>
-							</li>
-							<li>
-								<a href="#">Workshop</a>
-							</li>
-							<li>
-								<a href="#">Sponsers</a>
-							</li>
-						</ul>
-						<!-- End DropDown Menu -->
-					</li>
-					<li class="dropdown-toggle nav-toggle">
-						<a href="#">More+
-							<b data-toggle="dropdown" class="caret"></b>
-						</a>
-						<!-- DropDown Menu -->
-						<ul class="dropdown-menu uppercase gray-border">
-							<li>
-								<a href="#">Blog</a>
-							</li>
-							<li>
-								<a href="#">Gallery</a>
-							</li>
-							<li>
-								<a href="#">Contact US</a>
-							</li>
-						</ul>
-						<!-- End DropDown Menu -->
-					</li>
-					<a href="#" target="_blank">
-						<button style="border:none;border-radius: 0px;padding: 9px;background-color: #3498db;color: white;">User Login</button>
-					</a>
-				</ul>
-			</div>
-			<!-- End Navigation Menu -->
-		</div>
-		<!-- End Navigation Inner -->
-	</section>
-	<!-- End Navigation Section -->
-
-
-	<!-- Page Header -->
-	<section class="page_header container waypoint">
-		<div class="page_header_inner">
-			<!-- Header -->
-			<h1 class="page_head normal t-center">
-				About Us
-			</h1>
-			<!-- Description -->
-			<!-- <p class="light t-center">
-				One liner
-			</p> -->
-		</div>
-	</section>
-	<!-- End Page Header -->
-
-
-	<!-- Blog Section -->
-	<section id="blog" class="container">
-		<!-- Blog Inner -->
-		<div class="inner blog">
-			<!-- Posts -->
-			<div class="posts">
-				<!-- Vision -->
-				<!-- Post -->
-				<div id="vision" class="post wow zoomIn">
-					<div class="wrapper">
-						<h1 class="normal post-header">
-							Our Vision
-						</h1>
-
-						<img class="imageAbout" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSmhcTQ3eip7hsAxxO9SRF5zoMGODdYtN7_4KCWi-ReopkQvyolg"
-						    alt="">
-						<p>We, at The Entrepreneurship Cell, share the common belief that for India to emerge as a world power, the youth has
-							to break the shackles of prejudices and inertia that has kept them from starting up. Creating an entrepreneurial ecosystem
-							to provide the platform for individuals with creative minds and ideas with potential for substantial business opportunities,
-							is what we strive towards continually. We enable smooth and efficient interaction between its principal components
-							spanning students, faculty, working professionals, aspiring and existing entrepreneurs, mentors, angel investors and
-							venture capitalists.</p>
-
-					</div>
-				</div>
-				<div id="achievements" class="post wow zoomIn" data-animation="fadeIn" data-animation-delay="100">
-					<div class="wrapper">
-						<h1 class="normal post-header">
-							Achievements
-						</h1>
-
-						<img class="imageAbout" src="data:image/jpeg;base64,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"
-						    alt="">
-						<p>Success has always had myriad connotations for every individual. For some it is recognition in society, and for some,
-							success is about evolution. E - Cell, through its activities and competitions, has achieved both. 16 years of unprecedented
-							work and planning has led to E-Cell being recognized as the Leading Entrepreneurship Promoting Student Organization
-							in the country by the ‘NEN Achievement Awards’ instituted by the Wadhwani Foundation and felicitated at TiECon 2005.</p>
-						<p>One among the various milestones achieved in its quest for perfection was the success in making ‘Eureka!', E-cell's
-							B-Plan competition, Asia's largest in 2001. CNN as well as Thomson Reuters have now recognized ‘Eureka!’ as Asia's
-							largest Business Model competition.</p>
-						<p>Success, for us, is not only about the milestones we reach but is also about the number of lives we affect during our
-							journey. With this in mind, we helped in the establishment of 150+ E-Cells in about 80 cities across the nation, through
-							our initiative, National Entrepreneurship Challenge. The Entrepreneurship Summit is our annual flagship event, which
-							has received patronage from UNESCO, Make in india, Digital India and Startup India. It brings together the leading
-							entrepreneurs of the world and caters to all those crazy rebels who wish to change the world, start their own business
-							or fund a business and become a trend-setter. Eminent personalities like Mr. Travis Kalanick (Founder &amp; CEO, Uber),
-							Sachin Bansal( Co-founder &amp; Executive chairman, Flipkart) Mr. Nandan Nilekani (Co-founder, Infosys), Dr. Werner
-							Vogels, (CTO, Amazon.com) have been a part of the Summit. </p>
-
-					</div>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<!-- End Blog Inner -->
-	</section>
-	<!-- End Blog Section -->
+    </main>
 
 
 
-	<!-- Site Socials and Address -->
-	<section id="site-socials" class="no-padding white-bg">
-		<div class="site-socials inner no-padding">
-			<!-- Socials -->
-			<div class="socials">
-				<!-- Facebook -->
-				<a href="https://twitter.com/kgececell" target="_blank" class="social">
-					<img src="https://cnet2.cbsistatic.com/img/NcgyXkNieAHP9EEV9wXf_L7Ampo=/270x0/2012/10/02/ba9a281f-fdb4-11e2-8c7c-d4ae52e62bcc/twitter.png"
-					    height="30px" width="30px">
-				</a>
-				<a href="https://www.facebook.com/KGEC.ECELL/" target="_blank" class="social">
-					<img src="https://icon2.kisspng.com/20180329/qxq/kisspng-computer-icons-facebook-login-thumbnail-facebook-icon-5abd4e055b4806.2394102715223557173739.jpg"
-					    height="30px" width="30px">
-				</a>
-				<a href="https://www.linkedin.com/company-beta/246895/" target="_blank" class="social">
-					<img src="https://vignette.wikia.nocookie.net/streetfoodfiles/images/b/bd/Linkedin-icon.png/revision/latest?cb=20111219011115"
-					    height="30px" width="30px">
-				</a>
-				<a href="https://www.instagram.com/kgececell/?hl=en" target="_blank" class="social">
-					<img src="https://vignette.wikia.nocookie.net/riverdalearchie/images/a/a5/Instagram_icon.png/revision/latest?cb=20170607174004"
-					    height="30px" width="30px">
-				</a>
+    <footer>
+        <div id="footer">
+            <div id="quicklinks">
+                <h3>Quicklinks</h3>
+                <a href=""> Alumni</a>
+                <br>
+                <a href=""> MAKAUT</a>
+                <br>
+                <a href=""> AICTE</a>
+                <br>
+                <a href=""> NIRF 2017</a>
+                <br>
+                <a href=""> CICBA 2018</a>
+                <br>
+                <a href=""> IQAC </a>
+                <br>
+            </div>
+            <div id="explore">
+                <h3>Explore</h3>
+                <a href="">
+                    Student's Activity</a>
+                <br>
+                <a href="">Espektro </a>
+                <br>
+                <a href="">E-Cell</a>
+                <br>
+                <a href="">Gallery</a>
+                <br>
+            </div>
+            <div id="acamedics">
+                <h3>Acamedics</h3>
+                <a href="">
+                    Calender</a>
+                <br>
+                <a href="">Syllabus </a>
+                <br>
+                <a href="">KGEC-ITRA R&D</a>
+                <br>
+                <a href="">IEEE-EDS STUDENT BRANCH CHAPTER</a>
+                <br>
+            </div>
+            <div id="address">
+                <h3>Contacts</h3>
+                <p>
+                    Kalyani Government Engineering College
+                    <br> Kalyani, Nadia, West Bengal, India 741235
+                    <br> Phone : +91 3325821309
+                    <br> Email : contact@kgec.edu.in
+                    <br>
+                </p>
 
+            </div>
+        </div>
+        <p id="copy">
+            <img src="img/icons/baseline_copyright_white_24dp.png" width="12px" alt=""> Copyright reserved by Kalyani Government Enginnering College</p>
+    </footer>
+    <script>
+        let menu = document.getElementById("links");
+        let b = 1;
+        let ele = document.getElementById("nav-icon");
+        let nav = document.getElementsByClassName("nav-wrap");
 
-			</div>
-			<!-- Adress, Mail -->
-			<div class="address">
-				<!-- Phone Number, Mail -->
-				<p>Contact US
-					<br>
-					<a href="mailto:kgececellenquiry@gmail.com" class="bold dark">Email - kgececellenquiry@gmail.com</a>
-				</p>
-				<!-- Adress -->
-				<p>E-CELL
-					<br>
-					<span class="bold colored">KGEC</span>
-				</p>
-			</div>
-		</div>
-		<!-- End Adress, Mail -->
-		</div>
-		<!-- End Inner -->
-	</section>
-	<!-- End Site Socials and Address -->
+        function toggle() {
+            if (b) {
+                menu.classList.add = "menu-open";
+                menu.style.visibility = "visible";
+                ele.classList.add("open");
+                nav[0].style.backgroundColor = "rgb(255, 255, 255)";
+                b = 0;
+            } else {
+                menu.style.visibility = "hidden";
+                ele.classList.remove("open");
+                nav[0].style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+                b = 1;
+            }
 
-
-
-
-
-	<!-- Footer -->
-	<footer class="footer">
-		<!-- Your Company Name -->
-		<h2 class="company-name condensed uppercase white bold">The Entrepreneurship Cell</h2>
-		<!-- Copyright -->
-		<!-- <p class="copyright normal">© 2014 All Rights Reserved. Designed by <a href="https://themeforest.net/user/GoldEyes" target="_blank" class="white">GoldEyes</a></p> -->
-	</footer>
-	<!-- End Footer -->
-
-
-
-
-
-	<!-- JS Files -->
-
-	<script type="text/javascript" src="js/about/plugins.js.download"></script>
-
-	<!-- End JS Files -->
+        }
+    </script>
 
 </body>
-
-</html>
