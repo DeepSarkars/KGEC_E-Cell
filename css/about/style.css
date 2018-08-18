@@ -1,16 +1,6 @@
-/* Fonts */
-	
-	/* Open Sans */
-	@import url(https://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700,800);
-
-	/* Open Sans Condensed */
-	@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
-
-	/* Condiment */
-	@import url(https://fonts.googleapis.com/css?family=Condiment);
-
-	/* Playball */
-	@import url(https://fonts.googleapis.com/css?family=Playball);
+main{
+	margin-top: 80px;
+}
 
 /* Main Styles */
 
@@ -32,14 +22,7 @@
 		overflow-x: hidden; 
 	}
 
-	img {
-	    -moz-user-select: none; 
-	    -webkit-user-select: none;
-	    -ms-user-select: none; 
-	    user-select: none; 
-	    -webkit-user-drag: none;
-	    user-drag: none;
-	}
+	
 
 	a,
 	a:hover,
@@ -51,10 +34,7 @@
 	
 	}
 
-	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
-		font-family: 'Open Sans', sans-serif;
-		font-weight:100;
-	}
+	
 
 	p{
 		margin:0 0 5px;
@@ -310,7 +290,7 @@
 	.post-header{
 		font-weight: 600 !important;
 		text-align: left;
-		color: #3498db;
+		
 	}
 	@media screen and (min-width: 800px){
 		.tz-gallery .associates_light img {
