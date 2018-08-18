@@ -107,6 +107,12 @@ html {
     width: 100%;
 }
 
+#brand a {
+    color: #37474f;
+    text-decoration: none;
+    z-index: 99;
+}
+
 #links a {
     text-decoration: none;
     color: #455a64;
