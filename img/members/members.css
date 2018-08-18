@@ -2,7 +2,7 @@
 	margin:0px; padding:0px;
 }
 body{
-	background:#F9F8F6; 
+	background:#F9F8F6; //#EFEEEC
 }
 
 /*===============================Header Part==============================*/
@@ -45,7 +45,7 @@ li>a{
 	font-size:20px;
 	text-decoration:none;
 	opacity:0.6;
-	/* //padding-left:2.5%;//padding-right:2.5%; */
+	//padding-left:2.5%;//padding-right:2.5%;
 }
 li>a:hover{
 	border-bottom:5px solid skyblue;
@@ -169,11 +169,11 @@ p{
 	overflow:hidden;
 }
 .image{
-	/* //position:relative; */
+	//position:relative;
 	width:250px;
 	height:250px;
 	float:left;
-	/* //height:auto; */
+	//height:auto;
 	transition:all 0.s ease-in;
 	width:80%;height:width;margin-left:10%;margin-right:10%;
 	border:1px solid black;
@@ -219,7 +219,7 @@ span{
 }
 .image2:hover{
 	width:25px;
-	/* //height:25px; */
+	//height:25px;
 }
 
 
@@ -229,7 +229,7 @@ span{
 /*=============================DESIGNING WIDTH FOR DIFFERENT SCREEN SIZES============================*/
 
 
-@media screen and (max-width:1260px){
+*@media screen and (max-width:1260px){
 	#navbar {width:90%;}
 	#navbar>li{width:25%;}
 	
