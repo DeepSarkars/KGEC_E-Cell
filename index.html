@@ -8,59 +8,58 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="css/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 </head>
 
 <body>   
-    <div class="container black">
-    </div>
+   
+  <!-- Fixed navbar -->
+ 
+   <section class="navigation">
+  <div class="container">
     <div class="container">
-   <div class="topnav" id="myTopnav">
-     <div class="logo_sect">
-                    <a href="index.html" class="logo"> <img src="img/icons/Ecell.png" width="72px" style="outline: 1px solid transparent;margin-top:-24px;" class="logo_def" alt="" /></a>
-                </div>
-    <div class="tabs">
-  <a href="index.html" class="active">Home</a>
-  
-  <div class="dropdown">
-    <button class="dropbtn">About 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="about.html">About US</a>
-      <a href="Alumni.html">Alumni</a>
-      <a href="Initiatives.html">Initiatives</a>
+    <div class="brand">
+      <a href="#!"><img src="img/icons/Ecell.png" width="72px"></a>
     </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">Events 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="esummit.html">E-Summit '19</a>
-      <a href="Egnition.html">Egnition</a>
-      <a href="#">Past E-Summits</a>
-    </div>
-  </div> 
-  <a href="gallery.html">Gallery</a>
-  <div class="dropdown">
-    <button class="dropbtn">Our Team 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="faculties.html">Faculties</a>
-      <a href="members.html">Members</a>
-    </div>
-  </div> 
-  
-    <a href="#" style="color: #ffff00; font-size: 20px; ">E-Summit '19</a>
+</div>
+
+    <nav class="tabs">
+      <div class="nav-mobile">
+        <a id="nav-toggle" href="#!"><span></span></a>
+      </div>
+      <ul class="nav-list" >
+        <!-- Setting the links to #! will ensure that no action takes place on click. -->
+       
+       <li><a href="#!">Home</a></li>
+        <li><a href="#!">E-Cell</a>
+            <ul class="nav-dropdown">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Alumni.html">Alumni</a></li>
+            <li><a href="Initiatives.html">Initiatives</a></li>
+          </ul>
+        </li>
+        <li><a href="#!">Events</a>
+          <ul class="nav-dropdown">
+            <li><a href="esummit.html">E-Summit '19</a></li>
+            <li><a href="Egnition.html">Egnition</a></li>
+            <li><a href="#!">Past E-Summits</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#!">Our Team</a>
+            <ul class="nav-dropdown">
+            <li><a href="faculties.html">Faculties</a></li>
+            <li><a href="members.html">Members</a></li>
+          </ul>
+        </li>
+        <li><a href="#!" style="color:#ffd700; font-weight: 20px;">E-Summit '19</a></li>
+
+      </ul>
+    </nav>
+
   </div>
-
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-
-</div>
-</div>
-
+</section>
     <!-- <section class="home"> -->
         <div class="container-fluid">
     <div class="main-carousel" id="h">
@@ -372,14 +371,32 @@
         slider.on('change', function (i) {
             fin[i].classList.add("fade");
         });
-        function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+        
+(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+
+
     </script>
 
 </body>
