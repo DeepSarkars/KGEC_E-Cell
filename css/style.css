@@ -288,7 +288,7 @@ label.icon-search {
     margin: 8px 0 0 0;
     font-size: 1.5em;
 }
-.search_form{
+/* .search_form{
   position:absolute;
   z-index:9999;
   right:0;
@@ -299,7 +299,7 @@ label.icon-search {
   background:#b1c51f;
   transition: height 0.2s ease-out 0.5s , top 0.2s ease-out 0.5s, padding 0.2s ease-out 0.5s, width 0.3s ease-out 0.2s;
   -webkit-transition: height 0.2s ease-out 0.5s , top 0.2s ease-out 0.5s, padding 0.2s ease-out 0.5s, width 0.3s ease-out 0.2s;
-}
+} */
 .search_form form{
 /*-- w3layouts --*/
   opacity:0;
@@ -1225,7 +1225,7 @@ a.w3ls-a:hover{
 	color:#a3ccff;
 }
 /*--top arrow--*/
-#toTop {
+/* #toTop {
     display: none;
     text-decoration: none;
     position: fixed;
@@ -1238,7 +1238,7 @@ a.w3ls-a:hover{
     border: none;
     text-indent: 100%;
 	background: url(../images/arrow.png) no-repeat 0px 0px;
-}
+} */
 #toTopHover {
     width: 35px;
     height: 35px;
@@ -1476,7 +1476,7 @@ a.w3ls-a:hover{
 		margin: 0.5em 0 0;
 	}
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+/* .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     position: absolute;
     width: 100%;
     z-index: 999;
@@ -1484,7 +1484,7 @@ a.w3ls-a:hover{
     padding: 0em 0;
     margin-top: 2em;
     z-index: 9999;
-}
+} */
 .navbar-default .navbar-toggle {
     right: 56px;
 }
@@ -1541,12 +1541,12 @@ margin-top: 33px;
 }
 }
 @media (max-width:736px) {
-div#bs-example-navbar-collapse-1 {
+/* div#bs-example-navbar-collapse-1 {
 		position: absolute;
 		z-index: 999;
 		width: 100%;
 		background: rgb(1, 103, 115);
-	}
+	} */
 .slider-text {
     top: 22%;
     left: 8%;
