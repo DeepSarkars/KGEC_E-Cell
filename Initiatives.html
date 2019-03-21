@@ -5,17 +5,7 @@
     <meta charset="utf-8" />
     <title> KGEC E-CELL </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/base.css">
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
     <link rel="stylesheet" href="css/about/bootstrap.min.css">
 	<link rel="stylesheet" href="css/about/style.css">
 	<link rel="stylesheet" href="css/about/font-awesome.css">
@@ -28,45 +18,32 @@
 </head>
 
 <body>
-    <div class="navv">
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">KGEC E-CELL</a>
-            <div class="dropdown">
-                <button class="dropbtn">Our Team
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="faculty.html">Faculties</a>
-                    <a href="members.html">Members</a>
-                </div>
-            </div>
-            <a href="gallery.html">Gallery</a>
-            <div class="dropdown">
-                <button class="dropbtn">Events
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="esummit.html">E-Summit '19</a>
-                    <a href="egnition.html">Egnition</a>
-                    <a href="esummit.html">Past E-Summit</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">About
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="about.html">About Us</a>
-                    <a href="alumni.html">Alumni</a>
-                    <a href="initiatives.html">Initiatives</a>
+    <nav class="nav-wrap">
+        <div class="navi">
+            <div id="menu-link">
+                <div id="brand">KGEC E-CELL</div>
+                <div id="nav-icon" onclick="toggle()">
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
 
-
-
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            <div id="links">
+                <div>
+                    <a href="#">About</a>
+                </div>
+                <div>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                    <a href="#">Gallery</a>
+                </div>
+                <div id="lastnav">
+                    <a href="#">Blog</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </nav>
     <main>
 
         <section class="page_header container waypoint">
@@ -149,28 +126,23 @@
 
     <footer>
         <div id="footer">
-            
-            <div id="address">
-
-                <h3>CONTACT US</h3>
-                <p> Entrepreneurship Cell
-                    <br>
-                    Kalyani Government Engineering College
-                    <br> Kalyani, Nadia
-                    <br> West Bengal
-                    <br> <i class="fa fa-envelope"></i> contact@kgececell.com
-                    <br>
-                </p>
-
-            </div>
-            <div id="explore">
-                <h3>EXPLORE</h3>
+            <div id="quicklinks">
+                <h3>Quicklinks</h3>
                 <a href="alumni.html"> Alumni</a>
                 <br>
                 <a href="additional.html"> Members</a>
                 <br>
-                <a href="faculty.html"> Faculties</a>
+                <a href="faculties.html"> Faculties</a>
                 <br>
+                <!-- <a href=""> NIRF 2017</a>
+                <br>
+                <a href=""> CICBA 2018</a>
+                <br>
+                <a href=""> IQAC </a>
+                <br> -->
+            </div>
+            <div id="explore">
+                <h3>Explore</h3>
                 <a href="gallery.html">
                     Gallery</a>
                 <br>
@@ -179,36 +151,34 @@
                 <a href="initiatives.html">Initiatives</a>
                 <br>
                 <!-- <a href=""></a>
-            <br> -->
+                <br> -->
             </div>
             <div id="acamedics">
-                <h3>EVENTS</h3>
+                <h3>Events</h3>
                 <a href="egnition.html">
                     Egnition</a>
                 <br>
-                <a href="esummit.html">E-Summit </a>
-
-            </div>
-
-            <div id="social">
-                <h3>FOLLOW US</h3>
-                <a href="https://www.facebook.com/KGEC.ECELL/" class="footer social fa fa-facebook">
-                </a>
-                &nbsp;
-                <a href="https://www.linkedin.com/company/kgec-e-cell/?originalSubdomain=in" class="footer social fa fa-linkedin"></a>
-                &nbsp;
-                <a href="https://www.instagram.com/kgececell/?hl=en" class="footer social fa fa-instagram"></a>
-                &nbsp;
-                <a href="https://www.twitter.com/kgececell" class="footer social fa fa-twitter"></a>
+                <a href="#">E-Summit </a>
                 <!-- <br>
-            <a href="">KGEC-ITRA R&D</a>
-            <br>
-            <a href="">IEEE-EDS STUDENT BRANCH CHAPTER</a>
-            <br> -->
+                <a href="">KGEC-ITRA R&D</a>
+                <br>
+                <a href="">IEEE-EDS STUDENT BRANCH CHAPTER</a>
+                <br> -->
+            </div>
+            <div id="address">
+                <h3>Contacts</h3>
+                <p>
+                    Kalyani Government Engineering College
+                    <br> Kalyani, Nadia, West Bengal, India 741235
+                    <br> Phone : +91 3325821309
+                    <br> Email : contact@kgec.edu.in
+                    <br>
+                </p>
+
             </div>
         </div>
         <p id="copy">
-            <img src="img/icons/baseline_copyright_white_24dp.png" width="12px" alt=""> KGEC E-CELL</p>
+                <img src="img/icons/baseline_copyright_white_24dp.png" width="12px" alt=""> Copyright reserved by Kalyani Government Enginnering College</p>
     </footer>
     <script>
         let menu = document.getElementById("links");
